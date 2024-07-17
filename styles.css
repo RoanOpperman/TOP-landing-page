@@ -174,17 +174,18 @@ cite {
   display: flex;
   background-color: #3882f6;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .cta-text p {
   font-size: 0.7rem;
 }
 .cta-text {
-  flex: 10;
+  flex: 10 0 200px;
   display: flex;
   flex-direction: column;
 }
 #CTA button {
-  flex: 1;
+  flex: 1 0 70px;
   width: 150px;
 }
 .cta-text h4,
