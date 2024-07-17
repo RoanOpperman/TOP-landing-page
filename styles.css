@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 *,
 *::after,
 *::before {
@@ -9,7 +10,7 @@ body {
   flex-direction: column;
   margin: 0;
   background-color: #f1f1f1;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Montserrat, Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -33,9 +34,14 @@ nav {
 nav ul {
   display: flex;
   gap: 20px;
+  font-weight: 700;
 }
 nav h4 {
+  min-width: 200px;
   margin: 0 auto 0 0;
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-weight: 900;
 }
 main {
   display: flex;
@@ -56,28 +62,35 @@ h1 {
 .hero_content {
   display: flex;
   flex-wrap: wrap;
-
+  padding: 20px 0;
   margin: auto 0;
   gap: 40px;
 }
 .hero_content h1 {
   margin: 0;
-  font-size: 2rem;
-  font-weight: 900;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #3882f6;
 }
 .hero_cta {
+  display: flex;
+  flex-direction: column;
   flex: 1 1 250px;
+  gap: 20px;
+  /* padding-top: 20px; */
 }
 .hero-img {
   display: flex;
-  flex: 1 1 200px;
+  flex: 2 1 200px;
   max-width: 900px;
-  background-color: grey;
+  /* background-color: grey; */
   justify-content: center;
   align-items: center;
 }
 .hero-img-plc_holder {
+  width: 100px;
   display: flex;
+  flex: 1 10 auto;
 }
 .hero-img p {
   font-size: 10px;
@@ -107,14 +120,18 @@ footer {
   flex: 3 0 280px;
   justify-content: center;
 }
-.some_ran_header {
+.some_ran_header h2 {
   text-align: center;
-  font-size: 0.9rem;
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 30px;
 }
 .some_rando_cards {
   display: flex;
   justify-content: center;
-  padding: 20px 190px;
+  padding: 20px 20px;
   gap: 20px;
   text-align: center;
   flex-wrap: wrap;
@@ -132,9 +149,17 @@ footer {
 }
 
 .card_img_holder {
+  position: relative;
   border: 2px solid #3882f6;
   border-radius: 8px;
   height: 90px;
+  overflow: hidden;
+}
+.card_img_holder img {
+  position: absolute;
+  width: 110%;
+  right: -5%;
+  bottom: -1%;
 }
 #quote_block {
   display: flex;
@@ -149,11 +174,14 @@ footer {
 blockquote {
   display: flex;
   flex-direction: column;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Merriweather, serif;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  color: #3882f6;
   font-size: 1.1rem;
   line-height: 1.5rem;
-  font-weight: 100;
-  width: 50%;
+  font-weight: 400;
+  width: 40%;
   margin: 0;
   padding: 0;
 }
@@ -161,6 +189,7 @@ cite {
   text-align: right;
   font-style: normal;
   font-size: 0.9rem;
+  color: #1f2937;
 }
 #CTA {
   padding: 40px;
@@ -204,5 +233,8 @@ button {
   padding: 4px 15px;
 }
 #hero button {
+  flex: 0 0 20px;
   border: none;
+  max-width: 120px;
+  margin: 0 auto;
 }
